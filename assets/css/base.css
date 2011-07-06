@@ -1,0 +1,107 @@
+/*
+This file should not be edited. It is part of the base
+theme. You should edit site.css if you have custom needs.
+*/
+
+/* Standard Elements */
+body { background: #fbfbfb url(/assets/images/bg.jpg) 0 0 repeat; font-family: "Lucida Grande", Verdana, sans-serif; font-size: 12px; color: #666; line-height: 20px; }
+a { color: #003399; background-color: transparent; font-weight: normal; text-decoration: none; }
+p { margin: 0; padding: 0; }
+h1 { color: #444; background-color: transparent; font-size: 16px; font-weight: bold; margin: 24px 0 2px 0; padding: 5px 0 6px 0; }
+table { width: 100%; }
+table tr td { text-align: left; }
+table tr th { text-align: left; }
+.stats-mod .stat { float: left; width: 200px; }
+.tiger-stripe table {width:400px; border:1px solid blue;}
+.tiger-stripe .oddrow {background-color:#E5E5E5;}
+.stats-mod .stat-plus { float: left; width: 300px; }
+.fl { float: left; }
+.fr { float: right; }
+.half { width: 49%; margin: 10px	0; }
+
+/* Template Stuff */
+#body-wrapper { width: 960px; margin: 0	auto	0	auto; }
+#header { position: relative; }
+#header h1 { margin: 0;  float: left; }
+#user-nav { float: right; }
+#header-div { background-color: #2e2721; padding: 5px; }
+.top-bump { margin-top: 10px; }
+.margin-left { margin-left: 10px; }
+
+/* Navigation */
+.side-nav { text-decoration: none; }
+.side-active { text-decoration: underline; color: blue; }
+
+/* Columns */
+.left-column { width: 200px; float: left; }
+.right-column { width: 750px; float: right; }
+.column-550 { width: 550px; }
+.column-500 { width: 500px; }
+.column-500-centered { width: 500px; margin-left: 200px; }
+.column-470-centered { width: 470px; margin-left: 230px; }
+.column-800-centered { width: 800px; margin-left: 90px; }
+.column-200-float { width: 200px; float: left; }
+.column-750-float { width: 750px; float: left; }
+
+/* Margins */
+.margin-left-100 { margin-left: 100px; }
+.margin-left-200 { margin-left: 200px; }
+.margin-left-300 { margin-left: 300px; }
+.margin-left-400 { margin-left: 400px; }
+.margin-left-500 { margin-left: 500px; }
+.margin-left-600 { margin-left: 600px; }
+.margin-left-700 { margin-left: 700px; }
+.margin-left-800 { margin-left: 800px; }
+.margin-left-900 { margin-left: 900px; }
+
+/* Body Assets */
+.cancel-link { color: red !important; text-decoration: none; }
+.cancel-link:hover { text-decoration: underline; }
+.data-header-full { width: 930px; padding: 5px 10px; margin-bottom: 10px; }
+.data-header-full p { width: 800px; float: left; font-weight: normal; font-size: 13px; }
+.data-header-full a { float: right; }
+
+.data-header-third { width: 720px; padding: 5px 10px; margin-bottom: 10px; }
+.data-header-third p { width: 580px; float: left; font-weight: normal; font-size: 13px; }
+.data-header-third a { float: right; }
+
+.data-header-half { width: 495px; padding: 5px 10px; margin-bottom: 10px; }
+.data-header-half p { width: 420px; float: left; font-weight: normal; font-size: 13px; }
+.data-header-half a { float: right; }
+
+/* Forms */
+.form-cont { margin: 5px	0; }
+.form-cont form { margin-top: 5px; }
+.form-cont p { padding: 5px 0; }
+.form-cont input { width: 73%; }
+.form-cont input[type=checkbox] { width: auto; margin-left: 80px; }
+.form-cont label { width: 100px; font-weight: bold; display: inline-block; text-align: right; padding-right: 10px; vertical-align: top; }
+.form-cont .field-error { color: red !important; margin: 0; padding: 0; margin-left: 115px; }
+.form-cont .cb-field-helper-text { margin-top: -10px; margin-left: 120px; padding: 0; font-style: italic; font-size: 11px; }
+.form-cont ul { margin: 0; }
+.form-cont li { list-style: none; }
+.form-cont #mytags { width: 600px; display: inline-block; }
+.form-cont .tag-span { float: left; margin-top: 6px; }
+.form-cont .datepicker { width: 100px; }
+.form-cont .field-footer-left { float: left; }
+.form-cont .field-footer-right { float: right; margin-right: 80px; margin-top: -8px; }
+.form-cont .field-footer-right span { font-weight: bold; font-size: 11px; }
+
+/* Jquery UI Overrides */
+.ui-widget-content { padding: 5px 10px; }
+.ui-widget-header { padding: 5px	5px; }
+.ui-link-text { padding: 2px 6px 3px; text-decoration: none; position: relative; display: inline-block; }
+.ui-link-icon-left { padding-left: 20px; }
+.ui-icon-link { display: inline-block; margin-top: 1px; }
+.ui-icon-left { left: 0.2em; margin: -8px 5px 0px 0px; margin-top: -8px; position: absolute; top: 50%; zoom: 1; }
+.ui-link-icon-right { padding-right: 20px; }
+.ui-icon-right { right: 0.2em; margin: -8px 0 0px 5px; margin-top: -8px; position: absolute; top: 50%; zoom: 1; }
+
+/* DataTables Overrides */
+.dataTables_info { padding-top: 0; }
+.dataTables_paginate { padding-top: 0; }
+.css_right { float: right; }
+
+/* Login Stuff */ 
+.login-cont { width: 100%; text-align: center; vertical-align: center; margin-top: 175px; }
+.login-cont h1 { font-size: 24px; margin-bottom: 15px; }
