@@ -56,7 +56,7 @@ class cbposts_model extends cbshared_model
 	function get()
 	{
 		$p = $this->db->get($this->_prefix . $this->_table)->result_array();
-		$this->_format_posts(&$p);
+		$this->_format_posts($p);
 		return $p;
 	}
 	
@@ -141,7 +141,7 @@ class cbposts_model extends cbshared_model
  	function set_having_category_name($name)
  	{
 		$p = $this->cbcategoriestoposts_model->get_by_category_name_url($name);
-		$this->_format_posts(&$p);
+		$this->_format_posts($p);
 		return $p;
  	}
  	
@@ -151,7 +151,7 @@ class cbposts_model extends cbshared_model
  	function set_having_label_name($name)
  	{
 		$p = $this->cblabelstoposts_model->get_by_label_name_url($name);
-		$this->_format_posts(&$p);
+		$this->_format_posts($p);
 		return $p;
  	}
 

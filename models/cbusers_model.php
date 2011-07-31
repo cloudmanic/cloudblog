@@ -36,7 +36,14 @@ class cbusers_model extends CI_Model
 	//
 	function get()
 	{
-		return $this->db->get($this->_prefix . $this->_table)->result_array();
+		$query = $this->db->get($this->_prefix . $this->_table);
+		
+		if($query)
+		{
+			return $query->result_array();
+		}
+		
+		return array();
 	}
 	
  	//

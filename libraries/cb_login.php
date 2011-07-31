@@ -24,6 +24,7 @@ class CB_Login
 		$this->_ci->load->helper('cloudblog');
 		$this->_ci->load->model('cbusers_model');
 		$this->_ci->load->library('session');
+		$this->_ci->load->library('cb_tables');
 		
 		// Set configs
 		$this->_cp_base = $this->_ci->config->item('cb_cp_url_base');
