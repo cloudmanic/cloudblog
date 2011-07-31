@@ -5,6 +5,30 @@
 //
 
 //
+// By calling this function and passing an a name a we can
+// reference some block content from a view. When we create a 
+// block in the control panel we give it a name. We pass that name
+// in and this function returns the body of that block.
+// If the block is not found it will return blank instead of erroring.
+//
+if(! function_exists('cb_block'))
+{
+	function cb_block($name)
+	{
+		$CI =& get_instance();
+		$CI->load->model('cbblocks_model');
+		$block = $CI->cbblocks_model->get_by_name($name);
+		
+		if(isset($block['BlocksBody']))
+		{
+			return $block['BlocksBody'];
+		}
+		
+		return '';
+	}
+}
+
+//
 // Here we pass in an array and an index.
 // If this index not not exist in the array
 // we return nothing instead of erroring out.
@@ -157,6 +181,7 @@ if(! function_exists('build_labels_selector'))
 		// Grab the list of tags from the database
 		$CI->load->model('cblabels_model');
 		$t = $CI->cblabels_model->get();
+		$jst = array();
 		foreach($t AS $key => $row)
 		{
 			$jst[] = '"' . $row['LabelsTitle'] . '"';
