@@ -16,7 +16,11 @@ class CB_Display
 	function __construct()
 	{
 		$this->_ci =& get_instance();
-		$this->_ci->_data = array();
+		
+		if(! isset($this->_ci->_data))
+		{
+			$this->_ci->_data = array();
+		}
 		
 		// Load up helpers, libraries, configs, and models
 		$this->_ci->load->config('cloudblog');
