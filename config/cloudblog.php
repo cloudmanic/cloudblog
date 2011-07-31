@@ -17,6 +17,7 @@ $config['cb_post_sections'] = array('summary', 'description', 'keywords', 'categ
 $config['cb_category_trigger'] = 'category';
 $config['cb_label_trigger'] = 'label';
 $config['cb_archive_trigger'] = 'archive';
+$config['cb_feed_trigger'] = 'feed';
 $config['cb_date_title_segment'] = '5';
 $config['cb_title_segment'] = '2';
 
