@@ -97,7 +97,7 @@ class CB_Tables
 				'PostsUserId' => array('type' => 'INT', 'constraint' => 9, 'unsigned' => TRUE),				
 				'PostsTitle' => array('type' => 'VARCHAR', 'constraint' => '500', 'null' => FALSE),
 				'PostsTitleUrl' => array('type' => 'VARCHAR', 'constraint' => '1000', 'null' => FALSE),
-				'PostsSummary' => array('type' => 'VARCHAR', 'constraint' => '500', 'null' => FALSE),
+				'PostsSummary' => array('type' => 'TEXT', 'null' => FALSE),
 				'PostsDescription' => array('type' => 'VARCHAR', 'constraint' => '500', 'null' => FALSE),
 				'PostsBody' => array('type' => 'TEXT', 'null' => FALSE),
 				'PostsKeywords' => array('type' => 'TEXT', 'null' => FALSE),
