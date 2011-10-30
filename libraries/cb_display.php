@@ -45,7 +45,8 @@ class CB_Display
 		if($this->_ci->uri->segment($this->_ci->config->item('cb_date_title_segment')))
 		{
 			$title = $this->_ci->uri->segment($this->_ci->config->item('cb_date_title_segment'));
-		} else {
+		} else 
+		{
 			$title = $this->_ci->uri->segment($this->_ci->config->item('cb_title_segment'));
 		}
 		
